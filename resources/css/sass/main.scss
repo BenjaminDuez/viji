@@ -1,0 +1,60 @@
+main {
+    flex-grow: 1;
+    position: relative;
+}
+//header
+nav {
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        color: $naval-blue;
+    }
+}
+
+
+//scanner
+#stream {
+    width: 100%;
+    height: 100%;
+}
+
+#overlay-scan {
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.7161239495798319) 0%, rgba(0,212,255,0) 100%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 1.25rem;
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    #cadre {
+        width: 100%;
+        height: 50%;
+        border: solid 2px #ffffff;
+        margin-top: 25%;
+        border-radius: .5rem;
+        position: relative;
+        #photo-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 65px;
+            height: 65px;
+            border-radius: 65px;
+            background-color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+    }
+}
+

@@ -1,0 +1,46 @@
+body {
+
+    background-image: url("/assets/img/mer.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        h1 {
+            font-size: 1rem;
+            padding: .5rem 0;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-weight: 600;
+            padding: .5rem 0;
+            font-size: 2.25rem;
+        }
+
+        #first-section {
+            margin-top: auto;
+        }
+
+        #scd-section {
+            margin-top: 4rem;
+            margin-bottom: auto;
+        }
+
+
+    }
+
+    footer {
+        margin-top: auto;
+        margin-bottom: 2.625rem;
+    }
+
+}

@@ -1,0 +1,89 @@
+$primary-color: #01687F;
+$scd-color: #F45700;
+$naval-blue: #072B4F;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    //Regular
+    font-display: block;
+    font-family: 'San Francisco';
+    src: url('/fonts/SF-Pro-Text-Regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    //Regular italic
+    font-display: block;
+    font-family: 'San Francisco';
+    src: url('/fonts/SF-Pro-Text-RegularItalic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    //Medium
+    font-display: block;
+    font-family: 'San Francisco';
+    src: url('/fonts/SF-Pro-Text-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    //Semibold
+    font-display: block;
+    font-family: 'San Francisco';
+    src: url('/fonts/SF-Pro-Text-Semibold.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    //bold
+    font-display: block;
+    font-family: 'San Francisco';
+    src: url('/fonts/SF-Pro-Text-Bold.otf');
+    font-weight: 700;
+}
+
+body {
+    font-family: "San Francisco", 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.button {
+    border-radius: 40px;
+    padding: 14px 16px;
+    background-color: $primary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+
+    img, svg {
+        vertical-align: top;
+        margin-right: .625rem;
+    }
+
+    &--orange {
+        background-color: $scd-color;
+    }
+    &--white {
+        background-color: #ffffff;
+        color: $primary-color;
+    }
+}
+
+@import "./sass/main";
